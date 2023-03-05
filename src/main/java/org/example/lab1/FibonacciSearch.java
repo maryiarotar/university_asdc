@@ -4,6 +4,7 @@ import org.example.lab0.Product;
 
 import java.util.List;
 
+/* fibonacci search */
 public class FibonacciSearch {
 
     public static int fibonacciSearch(List<Product> array, int id) {

@@ -6,6 +6,7 @@ import org.example.lab0.Product;
 
 import java.util.*;
 
+/* binary search method and method to make a tree from array */
 @Getter
 @Setter
 public class BinaryTreeSearch {

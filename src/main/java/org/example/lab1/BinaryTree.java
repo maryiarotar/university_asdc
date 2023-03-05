@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.example.lab0.Product;
 
+/* binary tree structure for unsorted array */
 @Getter
 public class BinaryTree {
 
