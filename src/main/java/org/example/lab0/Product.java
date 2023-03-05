@@ -1,21 +1,15 @@
-package org.example.lab1;
+package org.example.lab0;
 
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonToken;
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import lombok.Data;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
 
 @Data
 public class Product {
@@ -76,6 +70,7 @@ public class Product {
     }
 
     public static List<Product> readFromFile(String file) throws IOException {
+
         List<Product> productList = new ArrayList<>();
 
         // Create a factory for creating a JsonParser instance
@@ -172,6 +167,14 @@ public class Product {
         }
     }
 
+    public static void shuffle(List<Product> productList){
+        for (int i= productList.size()-1; i > 0; i--){
+            int j = (int) Math.floor(Math.random() * (i+1));
+            Product temp = productList.get(j);
+            productList.set(j, productList.get(i));
+            productList.set(i, temp);
+        }
+    }
 
 
 }

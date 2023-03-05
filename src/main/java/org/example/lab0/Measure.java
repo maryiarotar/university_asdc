@@ -1,4 +1,4 @@
-package org.example.lab1;
+package org.example.lab0;
 
 public enum Measure {
 

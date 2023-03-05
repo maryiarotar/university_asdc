@@ -55,28 +55,4 @@
   "price" : 0.0,
   "amount" : 0,
   "measure" : null
-},
-{
-  "id" : 52,
-  "name" : "AAAAAAAAAAA",
-  "description" : null,
-  "price" : 0.0,
-  "amount" : 0,
-  "measure" : null
-},
-{
-  "id" : 53,
-  "name" : "Bbb Ccccccc",
-  "description" : null,
-  "price" : 0.0,
-  "amount" : 0,
-  "measure" : null
-},
-{
-  "id" : 54,
-  "name" : "Bbb Ccccccc",
-  "description" : null,
-  "price" : 0.0,
-  "amount" : 0,
-  "measure" : null
 }]
