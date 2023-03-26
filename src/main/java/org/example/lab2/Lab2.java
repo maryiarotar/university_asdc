@@ -19,12 +19,14 @@ public class Lab2 {
 
     //TODO: change library path to source dir (-Djava.library.path="/path/to/mylib")
 
-    /* now .dll for sortings lays in the system library path. (prog.files/java/jdk/bin) */
+    /* .dll for sortings lays in the system library path. (prog.files/java/jdk/bin) */
     /* move mylib.dll to your lib path */
-    //TODO: the source code for native methods lays in .\mylib (it's a Rust project) */
 
 
 
+    //the source code for native methods lays in https://github.com/maryiarotar/ASDC02/ (it's a Rust project) */
+    // mylib.dll (lib for windows) lays in lab_asdc/lib/mylib.dll
+    //lib for linux hasn't yet compiled
     private static native String bubbleSort(String path);
     private static native String insertionSort(String path);
     private static native String selectionSort(String path);
@@ -32,28 +34,29 @@ public class Lab2 {
     private static native String mergeSort(String path);
 
     static {
-
         //?add checking "if system linux - then to change mylib.dll to linux library"??
 
         System.loadLibrary("mylib");
     }
 
+
     public static void main(String[] args) throws IOException {
 
+
         String strB = bubbleSort("./UNSORTED.json");
-        System.out.println(strB + "\n---------------");
+        System.out.println(strB + "\n----best: O(n), average: O(n^2), worst: O(n^2)-------\n");
 
         String strI = insertionSort("./UNSORTED.json");
-        System.out.println(strI + "\n---------------");
+        System.out.println(strI + "\n----best: O(n), average: O(n^2), worst: O(n^2)-------\n");
 
         String strS = selectionSort("./UNSORTED.json");
-        System.out.println(strS + "\n---------------");
+        System.out.println(strS + "\n----best: O(n^2), average: O(n^2), worst: O(n^2)-------\n");
 
         String strSh = shellSort("./UNSORTED.json");
-        System.out.println(strSh + "\n---------------");
+        System.out.println(strSh + "\n----best: O(n), average: O((nlog(n))^2), worst: O((nlog(n))^2)-------\n");
 
         String strM = mergeSort("./UNSORTED.json");
-        System.out.println(strM + "\n---------------");
+        System.out.println(strM + "\n----best: O(nlog(n)), average: O(nlog(n)), worst: O(nlog(n))-------\n");
 
 
 
