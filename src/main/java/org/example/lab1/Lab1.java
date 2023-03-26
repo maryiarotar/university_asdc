@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
+/* main to test search methods */
 public class Lab1 {
 
     public static int askForNumber() {

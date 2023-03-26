@@ -3,6 +3,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+/src/main/java/org/example/lab2/mylib/*
+
+
 ### IntelliJ IDEA ###
 .idea/modules.xml
 .idea/jarRepositories.xml
@@ -36,5 +39,3 @@ build/
 
 ### Mac OS ###
 .DS_Store
-
-org/example/lab1/

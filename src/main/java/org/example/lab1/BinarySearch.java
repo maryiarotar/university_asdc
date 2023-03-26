@@ -4,6 +4,7 @@ import org.example.lab0.Product;
 
 import java.util.List;
 
+/* binary search for sorted array */
 public class BinarySearch {
 
     public static int binarySearch(List<Product> array, int id) {

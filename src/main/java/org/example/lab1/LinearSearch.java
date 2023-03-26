@@ -6,6 +6,7 @@ import org.example.lab0.Product;
 
 import java.util.List;
 
+/* linear search for unsorted array */
 public class LinearSearch {
 
     public static int search(List<Product> array, int id){

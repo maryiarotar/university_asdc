@@ -5,13 +5,17 @@ import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonToken;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.google.gson.Gson;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
+@Getter
+@Setter
 public class Product {
 
     private int id;
@@ -174,6 +178,20 @@ public class Product {
             productList.set(j, productList.get(i));
             productList.set(i, temp);
         }
+    }
+
+    public static void writeProductsToNewFile(String filepath, List<Product> productList){
+
+        try (PrintWriter out = new PrintWriter(new FileWriter(filepath))) {
+            File myObj = new File("filename.txt");
+            myObj.createNewFile();
+            Gson gson = new Gson();
+            String jsonString = gson.toJson(productList);
+            out.write(jsonString);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
 
