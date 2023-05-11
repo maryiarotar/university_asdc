@@ -19,3 +19,37 @@
 
 ###### Заключение ###### 
    Методы сортировки, такие как bubbleSort, insertionSort, selectionSort, shellSort и mergeSort, предоставляют различные подходы к упорядочению элементов. Каждый из этих методов имеет свои преимущества и недостатки, а также различную временную сложность. При выборе метода сортировки необходимо учитывать особенности данных, с которыми вы работаете, и выбирать наиболее подходящий алгоритм для достижения оптимальной производительности.
+
+###### Результаты лабораторной 2 ###### 
+
+<<<Bubble sorting... 2400 comparisons & 650 permutations has done>>>.
+Sorted file is: ./BUBBLE_SORTED.json
+
+    performance = 0.00061796 seconds 
+----best: O(n), average: O(n^2), worst: O(n^2)-------
+
+<<<Insertion sorting... 700 comparisons & 700 permutations has done>>>.
+Sorted file is: ./INSERTION_SORTED.json
+
+    performance = 0.00150406 seconds 
+----best: O(n), average: O(n^2), worst: O(n^2)-------
+
+<<<Selection sorting... 1275 comparisons & 50 permutations has done>>>.
+Sorted file is: ./SELECTION_SORTED.json
+
+    performance = 0.000294226 seconds 
+----best: O(n^2), average: O(n^2), worst: O(n^2)-------
+
+<<<Shell sorting... 362 comparisons & 154 permutations has done>>>.
+Sorted file is: ./SHELL_SORTED.json
+
+    performance = 0.000137277 seconds 
+----best: O(n), average: O((nlog(n))^2), worst: O((nlog(n))^2)-------
+
+<<<Merge sorting... 425 comparisons & 224 permutations has done>>>.
+Sorted file is: ./MERGE.json
+
+    performance = 0.00187227 seconds 
+----best: O(nlog(n)), average: O(nlog(n)), worst: O(nlog(n))-------
+
+
